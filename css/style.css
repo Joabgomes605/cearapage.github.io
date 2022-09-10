@@ -5,6 +5,10 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 header {
     width: 100vw;
     height: 300px;
@@ -14,15 +18,14 @@ header {
 .logo{
     width: 100%;
     height: 250px;
-    background-color: #24ed6d;
+    background-color: #08bd49;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .logo > .img_logo{
-    width: 65%;
-    height: 210px;
-    background-color: #24ed6d;
+    width: 70%;
+    height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -42,10 +45,9 @@ nav > ul {
     align-items: center;
     justify-content: center;
     gap: 25px;
+    list-style: none;
 }
-nav > ul > li {
-    list-style: none
-}
+
 nav > ul > li > a {
     text-decoration: none;
     color: #ffffff;
@@ -53,9 +55,785 @@ nav > ul > li > a {
     font-size: 1rem;
 }
 nav > ul > li > a:hover {
-    padding: 5px 15px;
+    padding: 5px 10px;
     background-color: #ffffff;
     color: #08bd49;
     border-radius: 3px;
-    font-weight: 900;
+    transition: 0.5s;
+}
+
+/*main*/
+main {
+    width: 100vw;
+}
+/*display = none*/
+.banner_principal {
+    width: 100%;
+    height: 180px;
+    background-color: black;
+    display: none;
+}
+.banner_principal > img {
+    width: 100%;
+}
+/*section curiosidade*/
+.curiosidades{
+    width: 100%;
+    height: 1300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titulo_curiosidades {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.titulo_curiosidades > h4 {
+    color: #08bd49;
+    font-size: 1.1rem;
+    font-weight: 800;
+}
+.banner_curiosidades{
+    width: 100%;
+    height: 1250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.card_curiosidades {
+    width: 85%;
+    height: 400px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 3px 3px 6px #5bcc85;
+}
+.imagem_card{
+    width: 100%;
+    height: 175px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.imagem_card > img {
+    width: 100%;
+    height: 175px;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.texto_card{
+    width: 100%;
+    height: 175px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.texto_card > p {
+    text-align: center;
+    font-size: 0.9rem;
+    line-height: 18px;
+    letter-spacing: 1px;
+    color: #08bd49;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.saiba_mais{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.saiba_mais > a{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #08bd49;
+    padding: 8px 10px;
+    border-radius: 5px;
+}
+
+/*video*/
+.video{
+    width: 100%;
+    height: 570px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titulo_video{
+    width: 90%;
+    height: 50px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    color: #08bd49;
+    font-size: 1.1rem;
+}
+.video_atracoes{
+    width: 90%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.video_atracoes > iframe {
+    width: 100%;
+    height: 150px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 6px #5bcc85;
+}
+
+/*footer*/
+footer{
+    width: 100vw;
+    height: 250px;
+    background-color: #08bd49;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sobre_redes{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
+}
+.linkedin{
+    width: 30%;
+    height: 120px;
+    border-radius: 50%;
+}
+.imagem_linkedin{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    border-radius: 50%;
+}
+.imagem_linkedin > img{
+    width: 100%;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.link_linkedin{
+    width: 100%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.link_linkedin > a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 700;
+    padding-top: 10px;
+    font-size: 1.1rem;
+}
+
+/*github*/
+.github{
+    width: 30%;
+    height: 120px;
+    border-radius: 50%;
+}
+.imagem_github{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    border-radius: 50%;
+}
+.imagem_github > img{
+    width: 100%;
+    height: 100px;
+    border-radius: 50%;
+}
+.link_github{
+    width: 100%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.link_github > a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 700;
+    padding-top: 10px;
+    font-size: 1.1rem;
+}
+
+.copy{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    color: #ffffff;
+    font-weight: 600;
+}
+.copy > small {
+    margin-bottom: 5px;
+}
+
+/*media-query = 375px*/
+@media (min-width:375px) {
+    .card_curiosidades{
+        width: 80%;
+    }
+
+    footer{
+        height: 200px;
+    }
+
+    .imagem_linkedin{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .imagem_github{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .imagem_linkedin > img{
+        width: 70%;
+        height: 80px;
+        border-radius: 50%;
+    }
+    .imagem_github > img{
+        width: 70%;
+        height: 80px;
+        border-radius: 50%;
+    }
+}
+
+/*media-query = 425px*/
+@media (min-width:425px) {
+    .card_curiosidades{
+        width: 75%;
+    }
+
+    footer{
+        height: 200px;
+    }
+
+    .imagem_linkedin{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .imagem_github{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .video_atracoes > iframe {
+        width: 90%;
+    }
+
+    .imagem_linkedin > img{
+        width: 65%;
+        height: 80px;
+        border-radius: 50%;
+    }
+    .imagem_github > img{
+        width: 65%;
+        height: 80px;
+        border-radius: 50%;
+    }
+}
+
+/*media-query = 768px*/
+@media (min-width:768px) {
+    header{
+        width: 100vw;
+        height: 85px;
+        background-color: #08bd49;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .logo{
+        width: 30%;
+        height: 80px;
+        display: flex;
+        align-items: center;
+    }
+    .logo > .img_logo{
+        width: 100%;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+    }
+    .img_logo > img {
+        width: 50%;
+        margin-left: 10px;
+    }
+
+    nav{
+        width: 70%;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+    }
+
+    nav > ul {
+        width: 90%;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        margin-right: 10px;
+    }
+
+    .banner_principal {
+        width: 100%;
+        height: 300px;
+        display: flex;
+    }
+    .banner_principal > img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .curiosidades {
+        height: 1160px;
+    }
+
+    .titulo_curiosidades {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+    }
+
+    .card_curiosidades{
+        height: 350px;
+    }
+    .texto_card{
+        width: 90%;
+        display: flex;
+        align-items: center;
+    }
+    .texto_card > p {
+        text-align: center;
+        letter-spacing: 2px;
+    }
+    .card_curiosidades > .saiba_mais {
+        height: 80px;
+        display: flex;
+        align-items: center;
+    }
+
+    .titulo_video {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+    .titulo_video > h4 {
+        font-size: 1.2rem;
+    }
+
+    .video{
+        height: 800px;
+    }
+
+    .video_atracoes{
+        height: 750px;
+    }
+
+    .video_atracoes > iframe {
+        height: 220px;
+    }
+
+    footer{
+        height: 150px;
+    }
+
+    .sobre_redes {
+        height: 130px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 1px;
+    }
+
+    .linkedin{
+        width: 30%;
+        height: 90px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .imagem_linkedin{
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .github{
+        width: 30%;
+        height: 90px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .imagem_github{
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .imagem_linkedin > img{
+        width: 25%;
+        height: 60px;
+        border-radius: 50%;
+    }
+    .imagem_github > img{
+        width: 25%;
+        height: 60px;
+        border-radius: 50%;
+    }
+
+    .copy{
+        height: 20px;
+    }
+
+    .copy > small{
+        margin-bottom: 10px;
+    }
+
+}
+
+/*media-query = 1024px*/
+@media (min-width:1024px) {
+    header{
+        width: 100vw;
+        height: 80px;
+        position: fixed;
+        background-color: #08bd49;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .logo{
+        width: 50%;
+        height: 80px;
+        display: flex;
+        align-items: center;
+    }
+    .logo > .img_logo{
+        width: 100%;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+    }
+    .img_logo > img {
+        width: 25%;   
+        margin-left: 15px;
+        object-fit: cover;
+    }
+
+    nav{
+        width: 70%;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+    }
+
+    nav > ul {
+        width: 90%;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        margin-right: 15px;
+    }
+
+    .banner_principal {
+        width: 100%;
+        height: 350px;
+        display: flex;
+    }
+    .banner_principal > img {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+    }
+
+    .curiosidades {
+        width: 100%;
+        height: 550px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .titulo_curiosidades {
+        width: 94%;
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: flex-start;
+    }
+    .titulo_curiosidades > h4 {
+        font-size: 1.3rem;
+    }
+    .banner_curiosidades{
+        width: 100%;
+        height: 500px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .card_curiosidades{
+        width: 30%;
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+    }
+    .imagem_card{
+        height: 190px;
+    }
+    .imagem_card > img {
+        height: 190px;
+    }
+    .texto_card{
+        width: 90%;
+        height: 210px;
+        display: flex;
+        align-items: center;
+    }
+    .texto_card > p {
+        text-align: center;
+        letter-spacing: 2px;
+    }
+    .card_curiosidades > .saiba_mais {
+        height: 50px;
+        display: flex;
+        align-items: center;
+    }
+
+
+    .video{
+        width: 100%;
+        height: 550px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .titulo_video {
+        width: 94%;
+        height: 50px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-start;
+    }
+    .titulo_video > h4 {
+        font-size: 1.3rem;
+    }
+
+    .video_atracoes{
+        width: 100%;
+        height: 500px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .video_atracoes > iframe {
+        width: 30%;
+        height: 450px;
+        object-fit: cover;
+    }
+
+    footer{
+        height: 180px;
+    }
+
+    .sobre_redes {
+        height: 150px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 1px;
+    }
+
+    .linkedin{
+        width: 30%;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .imagem_linkedin{
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .github{
+        width: 30%;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .imagem_github{
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .imagem_linkedin > img{
+        width: 25%;
+        height: 70px;
+        border-radius: 50%;
+    }
+    .imagem_github > img{
+        width: 25%;
+        height: 70px;
+        border-radius: 50%;
+    }
+
+    .copy{
+        height: 20px;
+    }
+
+    .copy > small{
+        margin-bottom: 10px;
+    }
+
+}
+
+/*media-query = 1440px*/
+@media (min-width:1440px) {
+    header{
+        position: fixed;
+    }
+    .logo{
+        width: 50%;
+    }
+    .img_logo{
+        width: 50%;
+    }
+    .img_logo > img {
+        width: 20%;
+    }
+    .banner_principal{
+        width: 100%;
+        height: 450px;
+    }
+    .banner_principal > img {
+        width: 100%;
+        height: 450px;
+    }
+
+    footer{
+        height: 180px;
+    }
+
+    .sobre_redes {
+        height: 150px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .linkedin{
+        width: 25%;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .imagem_linkedin{
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .github{
+        width: 25%;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .imagem_github{
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .imagem_linkedin > img{
+        width: 20%;
+        height: 70px;
+        border-radius: 50%;
+    }
+    .imagem_github > img{
+        width: 20%;
+        height: 70px;
+        border-radius: 50%;
+    }
+
+    .copy{
+        height: 20px;
+    }
+
+    .copy > small{
+        margin-bottom: 1px;
+    }
 }
