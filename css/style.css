@@ -5,10 +5,15 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+html, body {
+    width: 100vw;
+    height: 100vh;
+}
 
 header {
     width: 100vw;
     height: 300px;
+    position: unset;
     background-color: #08a337;
     display: flex;
     flex-direction: column;
@@ -61,7 +66,23 @@ nav > ul > li > a:hover {
 /*main*/
 main {
     width: 100vw;
+    height: auto;
 }
+
+
+.elemento {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+}
+
+.material-symbols-outlined {
+    padding: 8px;
+    background-color: #01250f;
+    color: #ffffff;
+    border-radius: 50%;
+}
+
 /*display = none*/
 .banner_principal {
     width: 100%;
@@ -413,6 +434,16 @@ footer{
         margin-right: 30px;
     }
 
+    .material-symbols-outlined{
+        color: #ffffff;
+        background-color: #033f15;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        padding: 10px;
+        border-radius: 50%;
+    }
+
     .banner_principal {
         width: 100%;
         height: 300px;
@@ -551,8 +582,9 @@ footer{
 @media (min-width:1024px) {
     header{
         width: 100vw;
-        height: 100px;
-        background-color: #08a337;
+        height: 80px;
+        position: fixed;
+        background-color: #08a336;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -598,13 +630,22 @@ footer{
         font-size: 1.1rem;
     }
 
+    main{
+        width: 100vw;
+        height: auto;
+    }
+
+    .elemento {
+        display: none;
+    }
+
     .banner_principal {
         width: 100%;
-        height: 400px;
-        background-color: #ffffff;
+        height: 550px;
         display: flex;
         align-items: center;
         justify-content: center;
+        padding-top: 50px;
     }
     .banner_principal > img {
         width: 94%;
@@ -771,7 +812,7 @@ footer{
 @media (min-width:1280px) {
     header{
         width: 100vw;
-        height: 100px;
+        height: 75px;
         background-color: #08a337;
         display: flex;
         flex-direction: row;
@@ -779,13 +820,14 @@ footer{
         justify-content: space-between;
     }
     .logo{
-        width: 30%;
+        width: 50%;
         height: 80px;
         display: flex;
         align-items: center;
+        justify-content: left;
     }
     .logo > .img_logo{
-        width: 100%;
+        width: 50%;
         height: 80px;
         display: flex;
         align-items: center;
@@ -820,12 +862,16 @@ footer{
 
     main{
         width: 100%;
+        height: auto;
     }
 
     .banner_principal {
         width: 100%;
-        height: 500px;
+        height: 600px;
         display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 120px;
     }
     .banner_principal > img {
         width: 90%;
@@ -998,7 +1044,8 @@ footer{
 @media (min-width:1440px) {
     header{
         background-color: #08a337;
-        height: 100px;
+        height: 90px;
+        position: fixed;
     }
     .logo{
         width: 40%;
@@ -1027,6 +1074,15 @@ footer{
 
     nav > ul > li > a {
         font-size: 1.1rem;
+    }
+
+    main{
+        width: 100vw;
+        height: auto;
+    }
+
+    .banner_principal {
+        height: 600px;
     }
 
     footer{
