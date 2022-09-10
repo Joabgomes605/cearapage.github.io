@@ -9,7 +9,7 @@
 header {
     width: 100vw;
     height: 300px;
-    background-color: #01250f;
+    background-color: #08a337;
     display: flex;
     flex-direction: column;
 }
@@ -107,7 +107,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: 3px 5px 8px #01250f;
+    box-shadow: 3px 5px 8px #08a337;
 }
 .imagem_card{
     width: 100%;
@@ -152,14 +152,14 @@ main {
 .saiba_mais > a{
     text-decoration: none;
     color: #ffffff;
-    background-color: #01250f;
+    background-color: #08a337;
     padding: 8px 10px;
     border-radius: 5px;
 }
 .saiba_mais > a:hover{
     transition: 1s;
-    background-color: #036426;
-    box-shadow: 3px 5px 8px #01250f;
+    background-color: #01250f;
+    box-shadow: 1px 1px 5px #08a337;
 }
 
 /*video*/
@@ -193,14 +193,14 @@ main {
     width: 100%;
     height: 150px;
     border-radius: 20px;
-    box-shadow: 3px 5px 8px #01250f;
+    box-shadow: 3px 5px 8px #08a337;
 }
 
 /*footer*/
 footer{
     width: 100vw;
     height: 250px;
-    background-color: #01250f;
+    background-color: #08a337;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -372,7 +372,7 @@ footer{
     header{
         width: 100vw;
         height: 85px;
-        background-color: #01250f;
+        background-color: #08a337;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -481,7 +481,7 @@ footer{
     }
 
     footer{
-        background-color: #01250f;
+        background-color: #08a337;
         height: 150px;
     }
 
@@ -551,8 +551,8 @@ footer{
 @media (min-width:1024px) {
     header{
         width: 100vw;
-        height: 80px;
-        background-color: #01250f;
+        height: 100px;
+        background-color: #08a337;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -594,6 +594,10 @@ footer{
         margin-right: 30px;
     }
 
+    nav > ul > li > a {
+        font-size: 1.1rem;
+    }
+
     .banner_principal {
         width: 100%;
         height: 400px;
@@ -606,7 +610,7 @@ footer{
         width: 94%;
         height: 350px;
         border-radius: 30px;
-        box-shadow: 1px 1px 8px #01250f;
+        box-shadow: 1px 1px 8px #08a337;
     }
 
     .curiosidades {
@@ -697,7 +701,7 @@ footer{
     }
 
     footer{
-        background-color: #01250f;
+        background-color: #08a337;
         height: 180px;
     }
 
@@ -767,8 +771,8 @@ footer{
 @media (min-width:1280px) {
     header{
         width: 100vw;
-        height: 80px;
-        background-color: #01250f;
+        height: 100px;
+        background-color: #08a337;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -810,6 +814,10 @@ footer{
         margin-right: 40px;
     }
 
+    nav > ul > li > a {
+        font-size: 1.1rem;
+    }
+
     main{
         width: 100%;
     }
@@ -822,7 +830,7 @@ footer{
     .banner_principal > img {
         width: 90%;
         height: 450px;
-        box-shadow: 1px 1px 8px #01250f;
+        box-shadow: 1px 1px 8px #08a337;
     }
 
     .curiosidades {
@@ -918,7 +926,7 @@ footer{
     }
 
     footer{
-        background-color: #01250f;
+        background-color: #08a337;
         width: 100%;
         height: 180px;
     }
@@ -989,8 +997,8 @@ footer{
 /*media-query = 1440px*/
 @media (min-width:1440px) {
     header{
-        background-color: #01250f;
-        height: 90px;
+        background-color: #08a337;
+        height: 100px;
     }
     .logo{
         width: 40%;
@@ -1010,15 +1018,19 @@ footer{
     .banner_principal > img {
         width: 90%;
         height: 450px;
-        box-shadow: 1px 1px 8px #01250f;
+        box-shadow: 1px 1px 8px #08a337;
     }
 
     nav > ul {
         margin-right: 40px;
     }
 
+    nav > ul > li > a {
+        font-size: 1.1rem;
+    }
+
     footer{
-        background-color: #01250f;
+        background-color: #08a337;
         height: 180px;
     }
 
