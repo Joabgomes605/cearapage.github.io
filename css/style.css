@@ -12,14 +12,13 @@ html {
 header {
     width: 100vw;
     height: 300px;
-    background-color: #08bd49;
+    background-color: #01250f;
     display: flex;
     flex-direction: column;
 }
 .logo{
     width: 100%;
     height: 250px;
-    background-color: #08bd49;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -37,7 +36,6 @@ header {
 nav {
     width: 100%;
     height: 50px;
-    background-color: #08bd49;
 }
 nav > ul {
     width: 100%;
@@ -71,7 +69,6 @@ main {
 .banner_principal {
     width: 100%;
     height: 180px;
-    background-color: black;
     display: none;
 }
 .banner_principal > img {
@@ -201,7 +198,7 @@ main {
 footer{
     width: 100vw;
     height: 250px;
-    background-color: #08bd49;
+    background-color: #01250f;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -373,7 +370,7 @@ footer{
     header{
         width: 100vw;
         height: 85px;
-        background-color: #08bd49;
+        background-color: #01250f;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -482,6 +479,7 @@ footer{
     }
 
     footer{
+        background-color: #01250f;
         height: 150px;
     }
 
@@ -553,7 +551,7 @@ footer{
         width: 100vw;
         height: 80px;
         position: fixed;
-        background-color: #08bd49;
+        background-color: #01250f;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -694,6 +692,7 @@ footer{
     }
 
     footer{
+        background-color: #01250f;
         height: 180px;
     }
 
@@ -765,7 +764,7 @@ footer{
         width: 100vw;
         height: 80px;
         position: fixed;
-        background-color: #08bd49;
+        background-color: #01250f;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -913,6 +912,7 @@ footer{
     }
 
     footer{
+        background-color: #01250f;
         width: 100%;
         height: 180px;
     }
@@ -983,6 +983,7 @@ footer{
 /*media-query = 1440px*/
 @media (min-width:1440px) {
     header{
+        background-color: #01250f;
         height: 90px;
         position: fixed;
     }
@@ -1011,6 +1012,7 @@ footer{
     }
 
     footer{
+        background-color: #01250f;
         height: 180px;
     }
 
