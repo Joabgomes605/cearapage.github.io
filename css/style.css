@@ -56,7 +56,7 @@ nav > ul > li > a {
 nav > ul > li > a:hover {
     padding: 5px 10px;
     background-color: #ffffff;
-    color: #08bd49;
+    color: #01250f;
     border-radius: 3px;
     transition: 0.5s;
 }
@@ -90,9 +90,9 @@ main {
     justify-content: center;
 }
 .titulo_curiosidades > h4 {
-    color: #08bd49;
+    color: #01250f;
     font-size: 1.1rem;
-    font-weight: 800;
+    font-weight: 700;
 }
 .banner_curiosidades{
     width: 100%;
@@ -110,7 +110,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: 3px 3px 6px #5bcc85;
+    box-shadow: 3px 5px 8px #01250f;
 }
 .imagem_card{
     width: 100%;
@@ -141,7 +141,7 @@ main {
     font-size: 0.9rem;
     line-height: 18px;
     letter-spacing: 1px;
-    color: #08bd49;
+    color: #01250f;
     font-weight: 600;
     margin-top: 10px;
 }
@@ -155,9 +155,14 @@ main {
 .saiba_mais > a{
     text-decoration: none;
     color: #ffffff;
-    background-color: #08bd49;
+    background-color: #01250f;
     padding: 8px 10px;
     border-radius: 5px;
+}
+.saiba_mais > a:hover{
+    transition: 1s;
+    background-color: #036426;
+    box-shadow: 3px 5px 8px #01250f;
 }
 
 /*video*/
@@ -174,7 +179,7 @@ main {
     display: flex;
     align-items: flex-end;
     justify-content: flex-start;
-    color: #08bd49;
+    color: #01250f;
     font-size: 1.1rem;
 }
 .video_atracoes{
@@ -828,7 +833,7 @@ footer{
     }
 
     .titulo_curiosidades {
-        width: 94%;
+        width: 91%;
         height: 50px;
         display: flex;
         flex-direction: row;
@@ -837,7 +842,7 @@ footer{
     }
     .titulo_curiosidades > h4 {
         font-size: 1.3rem;
-        margin-left: 5px;
+        margin-left: 10px;
     }
     .banner_curiosidades{
         width: 100%;
@@ -845,11 +850,11 @@ footer{
         display: flex;
         flex-direction: row;
         align-items: center;
-        gap: 20px;
+        gap: 40px;
     }
 
     .card_curiosidades{
-        width: 30%;
+        width: 28%;
         height: 450px;
         display: flex;
         flex-direction: column;
@@ -888,7 +893,7 @@ footer{
     }
 
     .titulo_video {
-        width: 94%;
+        width: 91%;
         height: 50px;
         display: flex;
         align-items: flex-end;
@@ -903,10 +908,11 @@ footer{
         height: 500px;
         display: flex;
         flex-direction: row;
+        gap: 10px;
     }
 
     .video_atracoes > iframe {
-        width: 30%;
+        width: 27%;
         height: 450px;
         object-fit: cover;
     }
