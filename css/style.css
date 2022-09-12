@@ -72,12 +72,14 @@ main {
 
 .elemento {
     position: fixed;
-    bottom: 20px;
-    right: 15px;
+    bottom: 25px;
+    right: 20px;
+    border-radius: 10%;
+    box-shadow: 1px 1px 4px #08a336;
 }
 
 .material-symbols-outlined {
-    padding: 15px;
+    padding: 10px;
     background-color: #18e756;
     color: #ffffff;
     border-radius: 10%;
@@ -124,15 +126,16 @@ main {
 .card_curiosidades {
     width: 85%;
     height: 400px;
+    background-color: #08a336;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: 3px 5px 8px #08a337;
+    
 }
 .imagem_card{
     width: 100%;
-    height: 175px;
+    height: 170px;
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -148,18 +151,18 @@ main {
 }
 
 .texto_card{
-    width: 100%;
-    height: 175px;
+    width: 95%;
+    height: 180px;
     display: flex;
     align-items: flex-start;
     justify-content: center;
 }
 .texto_card > p {
-    text-align: center;
+    text-align: justify;
     font-size: 0.9rem;
     line-height: 18px;
     letter-spacing: 1px;
-    color: #01250f;
+    color: #ffffff;
     font-weight: 600;
     margin-top: 10px;
 }
@@ -172,9 +175,9 @@ main {
 }
 .saiba_mais > a{
     text-decoration: none;
-    color: #ffffff;
-    background-color: #08a337;
-    padding: 8px 10px;
+    color: #08a336;
+    background-color: #ffffff;
+    padding: 5px 10px;
     border-radius: 5px;
 }
 .saiba_mais > a:hover{
@@ -214,7 +217,7 @@ main {
     width: 100%;
     height: 150px;
     border-radius: 20px;
-    box-shadow: 3px 5px 8px #08a337;
+    box-shadow: 3px 3px 8px #08a337;
 }
 
 /*footer*/
@@ -434,14 +437,19 @@ footer{
         margin-right: 30px;
     }
 
-    .material-symbols-outlined{
-        color: #ffffff;
-        background-color: #033f15;
+    .elemento {
         position: fixed;
-        bottom: 20px;
-        right: 20px;
-        padding: 10px;
-        border-radius: 50%;
+        bottom: 25px;
+        right: 35px;
+        border-radius: 10%;
+        box-shadow: 1px 1px 4px #08a336;
+    }
+
+    .material-symbols-outlined {
+        padding: 15px;
+        background-color: #18e756;
+        color: #ffffff;
+        border-radius: 10%;
     }
 
     main{
@@ -650,10 +658,10 @@ footer{
         padding-top: 50px;
     }
     .banner_principal > img {
-        max-width: 94%;
+        max-width: 91%;
         height: 350px;
-        border-radius: 30px;
-        box-shadow: 1px 1px 8px #08a337;
+        border-radius: 5px;
+        box-shadow: 2px 1px 8px #08a337;
     }
 
     .curiosidades {
@@ -684,7 +692,7 @@ footer{
     }
 
     .card_curiosidades{
-        width: 30%;
+        width: 29%;
         height: 460px;
         display: flex;
         flex-direction: column;
@@ -721,7 +729,7 @@ footer{
 
     .titulo_video {
         width: 94%;
-        height: 50px;
+        height: 100px;
         display: flex;
         align-items: flex-end;
         justify-content: flex-start;
@@ -738,8 +746,8 @@ footer{
     }
 
     .video_atracoes > iframe {
-        width: 30%;
-        height: 450px;
+        width: 28%;
+        height: 400px;
         object-fit: cover;
     }
 
