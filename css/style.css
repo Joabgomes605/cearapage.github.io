@@ -76,6 +76,7 @@ main {
     right: 20px;
     border-radius: 10%;
     box-shadow: 1px 1px 4px #08a336;
+    z-index: 1000;
 }
 
 .material-symbols-outlined {
@@ -108,12 +109,45 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    -webkit-animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;
+	animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;
 }
 .titulo_curiosidades > h4 {
     color: #01250f;
     font-size: 1.1rem;
     font-weight: 700;
 }
+
+@-webkit-keyframes slide-top {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    50% {
+      -webkit-transform: translateY(-5px);
+              transform: translateY(-5px);
+    }
+    100%{
+        -webkit-transform: translateY(-1px);
+                transform: translateY(-1px);
+    }
+  }
+  @keyframes slide-top {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    50% {
+      -webkit-transform: translateY(-5px);
+              transform: translateY(-5px);
+    }
+    100%{
+        -webkit-transform: translateY(-1px);
+                transform: translateY(-1px);
+    }
+  }
+  
+
 .banner_curiosidades{
     width: 100%;
     height: 1250px;
@@ -131,8 +165,39 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    -webkit-animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;
+	animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;
 }
+
+@-webkit-keyframes slide-top {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    50% {
+      -webkit-transform: translateY(-5px);
+              transform: translateY(-5px);
+    }
+    100%{
+        -webkit-transform: translateY(-1px);
+                transform: translateY(-1px);
+    }
+  }
+  @keyframes slide-top {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    50% {
+      -webkit-transform: translateY(-5px);
+              transform: translateY(-5px);
+    }
+    100%{
+        -webkit-transform: translateY(-1px);
+                transform: translateY(-1px);
+    }
+  }
+
 .imagem_card{
     width: 100%;
     height: 170px;
@@ -202,7 +267,39 @@ main {
     justify-content: flex-start;
     color: #01250f;
     font-size: 1.1rem;
+    -webkit-animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;
+	animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;
 }
+
+@-webkit-keyframes slide-top {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    50% {
+      -webkit-transform: translateY(-5px);
+              transform: translateY(-5px);
+    }
+    100%{
+        -webkit-transform: translateY(-1px);
+                transform: translateY(-1px);
+    }
+  }
+  @keyframes slide-top {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    50% {
+      -webkit-transform: translateY(-5px);
+              transform: translateY(-5px);
+    }
+    100%{
+        -webkit-transform: translateY(-1px);
+                transform: translateY(-1px);
+    }
+  }
+
 .video_atracoes{
     width: 90%;
     height: 500px;
@@ -218,7 +315,38 @@ main {
     height: 150px;
     border-radius: 20px;
     box-shadow: 3px 3px 8px #08a337;
+    -webkit-animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;
+	animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;
 }
+
+@-webkit-keyframes slide-top {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    50% {
+      -webkit-transform: translateY(-5px);
+              transform: translateY(-5px);
+    }
+    100%{
+        -webkit-transform: translateY(-1px);
+                transform: translateY(-1px);
+    }
+  }
+  @keyframes slide-top {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    50% {
+      -webkit-transform: translateY(-5px);
+              transform: translateY(-5px);
+    }
+    100%{
+        -webkit-transform: translateY(-1px);
+                transform: translateY(-1px);
+    }
+  }
 
 /*footer*/
 footer{
