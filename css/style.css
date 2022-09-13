@@ -1,11 +1,12 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-html, body {
+html,
+body {
     width: 100vw;
     height: 100vh;
 }
@@ -18,28 +19,33 @@ header {
     display: flex;
     flex-direction: column;
 }
-.logo{
+
+.logo {
     width: 100%;
     height: 250px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.logo > .img_logo{
+
+.logo>.img_logo {
     width: 70%;
     height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.img_logo > img{
+
+.img_logo>img {
     width: 90%;
 }
+
 nav {
     width: 100%;
     height: 50px;
 }
-nav > ul {
+
+nav>ul {
     width: 100%;
     height: 50px;
     display: flex;
@@ -49,13 +55,14 @@ nav > ul {
     list-style: none;
 }
 
-nav > ul > li > a {
+nav>ul>li>a {
     text-decoration: none;
     color: #ffffff;
     font-weight: 600;
     font-size: 1rem;
 }
-nav > ul > li > a:hover {
+
+nav>ul>li>a:hover {
     padding: 5px 10px;
     background-color: #ffffff;
     color: #01250f;
@@ -92,17 +99,20 @@ main {
     height: 180px;
     display: none;
 }
-.banner_principal > img {
+
+.banner_principal>img {
     width: 100%;
 }
+
 /*section curiosidade*/
-.curiosidades{
+.curiosidades {
     width: 100%;
     height: 1300px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .titulo_curiosidades {
     width: 100%;
     height: 50px;
@@ -110,9 +120,10 @@ main {
     align-items: center;
     justify-content: center;
     -webkit-animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;
-	animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;
+    animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;
 }
-.titulo_curiosidades > h4 {
+
+.titulo_curiosidades>h4 {
     color: #01250f;
     font-size: 1.1rem;
     font-weight: 700;
@@ -120,35 +131,40 @@ main {
 
 @-webkit-keyframes slide-top {
     0% {
-      -webkit-transform: translateY(0);
-              transform: translateY(0);
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
     }
-    50% {
-      -webkit-transform: translateY(-5px);
-              transform: translateY(-5px);
-    }
-    100%{
-        -webkit-transform: translateY(-1px);
-                transform: translateY(-1px);
-    }
-  }
-  @keyframes slide-top {
-    0% {
-      -webkit-transform: translateY(0);
-              transform: translateY(0);
-    }
-    50% {
-      -webkit-transform: translateY(-5px);
-              transform: translateY(-5px);
-    }
-    100%{
-        -webkit-transform: translateY(-1px);
-                transform: translateY(-1px);
-    }
-  }
-  
 
-.banner_curiosidades{
+    50% {
+        -webkit-transform: translateY(-5px);
+        transform: translateY(-5px);
+    }
+
+    100% {
+        -webkit-transform: translateY(-1px);
+        transform: translateY(-1px);
+    }
+}
+
+@keyframes slide-top {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    50% {
+        -webkit-transform: translateY(-5px);
+        transform: translateY(-5px);
+    }
+
+    100% {
+        -webkit-transform: translateY(-1px);
+        transform: translateY(-1px);
+    }
+}
+
+
+.banner_curiosidades {
     width: 100%;
     height: 1250px;
     display: flex;
@@ -157,6 +173,7 @@ main {
     justify-content: center;
     gap: 20px;
 }
+
 .card_curiosidades {
     width: 85%;
     height: 400px;
@@ -166,39 +183,44 @@ main {
     flex-direction: column;
     align-items: center;
     -webkit-animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;
-	animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;
+    animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;
 }
 
 @-webkit-keyframes slide-top {
     0% {
-      -webkit-transform: translateY(0);
-              transform: translateY(0);
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
     }
-    50% {
-      -webkit-transform: translateY(-5px);
-              transform: translateY(-5px);
-    }
-    100%{
-        -webkit-transform: translateY(-1px);
-                transform: translateY(-1px);
-    }
-  }
-  @keyframes slide-top {
-    0% {
-      -webkit-transform: translateY(0);
-              transform: translateY(0);
-    }
-    50% {
-      -webkit-transform: translateY(-5px);
-              transform: translateY(-5px);
-    }
-    100%{
-        -webkit-transform: translateY(-1px);
-                transform: translateY(-1px);
-    }
-  }
 
-.imagem_card{
+    50% {
+        -webkit-transform: translateY(-5px);
+        transform: translateY(-5px);
+    }
+
+    100% {
+        -webkit-transform: translateY(-1px);
+        transform: translateY(-1px);
+    }
+}
+
+@keyframes slide-top {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    50% {
+        -webkit-transform: translateY(-5px);
+        transform: translateY(-5px);
+    }
+
+    100% {
+        -webkit-transform: translateY(-1px);
+        transform: translateY(-1px);
+    }
+}
+
+.imagem_card {
     width: 100%;
     height: 170px;
     display: flex;
@@ -207,7 +229,8 @@ main {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
-.imagem_card > img {
+
+.imagem_card>img {
     width: 100%;
     height: 175px;
     object-fit: cover;
@@ -215,14 +238,15 @@ main {
     border-top-right-radius: 20px;
 }
 
-.texto_card{
+.texto_card {
     width: 95%;
     height: 180px;
     display: flex;
     align-items: flex-start;
     justify-content: center;
 }
-.texto_card > p {
+
+.texto_card>p {
     text-align: justify;
     font-size: 0.9rem;
     line-height: 18px;
@@ -231,35 +255,39 @@ main {
     font-weight: 600;
     margin-top: 10px;
 }
-.saiba_mais{
+
+.saiba_mais {
     width: 100%;
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.saiba_mais > a{
+
+.saiba_mais>a {
     text-decoration: none;
     color: #08a336;
     background-color: #ffffff;
     padding: 5px 10px;
     border-radius: 5px;
 }
-.saiba_mais > a:hover{
+
+.saiba_mais>a:hover {
     transition: 1s;
     background-color: #01250f;
     box-shadow: 1px 1px 5px #08a337;
 }
 
 /*video*/
-.video{
+.video {
     width: 100%;
     height: 570px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.titulo_video{
+
+.titulo_video {
     width: 90%;
     height: 50px;
     display: flex;
@@ -268,39 +296,44 @@ main {
     color: #01250f;
     font-size: 1.1rem;
     -webkit-animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;
-	animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;
+    animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;
 }
 
 @-webkit-keyframes slide-top {
     0% {
-      -webkit-transform: translateY(0);
-              transform: translateY(0);
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
     }
-    50% {
-      -webkit-transform: translateY(-5px);
-              transform: translateY(-5px);
-    }
-    100%{
-        -webkit-transform: translateY(-1px);
-                transform: translateY(-1px);
-    }
-  }
-  @keyframes slide-top {
-    0% {
-      -webkit-transform: translateY(0);
-              transform: translateY(0);
-    }
-    50% {
-      -webkit-transform: translateY(-5px);
-              transform: translateY(-5px);
-    }
-    100%{
-        -webkit-transform: translateY(-1px);
-                transform: translateY(-1px);
-    }
-  }
 
-.video_atracoes{
+    50% {
+        -webkit-transform: translateY(-5px);
+        transform: translateY(-5px);
+    }
+
+    100% {
+        -webkit-transform: translateY(-1px);
+        transform: translateY(-1px);
+    }
+}
+
+@keyframes slide-top {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    50% {
+        -webkit-transform: translateY(-5px);
+        transform: translateY(-5px);
+    }
+
+    100% {
+        -webkit-transform: translateY(-1px);
+        transform: translateY(-1px);
+    }
+}
+
+.video_atracoes {
     width: 90%;
     height: 500px;
     display: flex;
@@ -310,46 +343,51 @@ main {
     gap: 10px;
 }
 
-.video_atracoes > iframe {
+.video_atracoes>iframe {
     width: 100%;
     height: 150px;
     border-radius: 20px;
     box-shadow: 3px 3px 8px #08a337;
     -webkit-animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;
-	animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;
+    animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;
 }
 
 @-webkit-keyframes slide-top {
     0% {
-      -webkit-transform: translateY(0);
-              transform: translateY(0);
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
     }
+
     50% {
-      -webkit-transform: translateY(-5px);
-              transform: translateY(-5px);
+        -webkit-transform: translateY(-5px);
+        transform: translateY(-5px);
     }
-    100%{
+
+    100% {
         -webkit-transform: translateY(-1px);
-                transform: translateY(-1px);
+        transform: translateY(-1px);
     }
-  }
-  @keyframes slide-top {
+}
+
+@keyframes slide-top {
     0% {
-      -webkit-transform: translateY(0);
-              transform: translateY(0);
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
     }
+
     50% {
-      -webkit-transform: translateY(-5px);
-              transform: translateY(-5px);
+        -webkit-transform: translateY(-5px);
+        transform: translateY(-5px);
     }
-    100%{
+
+    100% {
         -webkit-transform: translateY(-1px);
-                transform: translateY(-1px);
+        transform: translateY(-1px);
     }
-  }
+}
 
 /*footer*/
-footer{
+footer {
     max-width: 100%;
     height: 250px;
     background-color: #08a337;
@@ -358,7 +396,7 @@ footer{
     align-items: center;
 }
 
-.sobre_redes{
+.sobre_redes {
     width: 100%;
     height: 200px;
     display: flex;
@@ -366,12 +404,14 @@ footer{
     justify-content: center;
     gap: 45px;
 }
-.linkedin{
+
+.linkedin {
     width: 30%;
     height: 120px;
     border-radius: 50%;
 }
-.imagem_linkedin{
+
+.imagem_linkedin {
     width: 100%;
     height: 100px;
     display: flex;
@@ -379,20 +419,22 @@ footer{
     justify-content: center;
     border-radius: 50%;
 }
-.imagem_linkedin > img{
+
+.imagem_linkedin>img {
     width: 80%;
     height: 80px;
     border-radius: 50%;
 }
 
-.link_linkedin{
+.link_linkedin {
     width: 100%;
     height: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.link_linkedin > a {
+
+.link_linkedin>a {
     text-decoration: none;
     color: #ffffff;
     font-weight: 700;
@@ -401,12 +443,13 @@ footer{
 }
 
 /*github*/
-.github{
+.github {
     width: 30%;
     height: 120px;
     border-radius: 50%;
 }
-.imagem_github{
+
+.imagem_github {
     width: 100%;
     height: 100px;
     display: flex;
@@ -414,19 +457,22 @@ footer{
     justify-content: center;
     border-radius: 50%;
 }
-.imagem_github > img{
+
+.imagem_github>img {
     width: 80%;
     height: 80px;
     border-radius: 50%;
 }
-.link_github{
+
+.link_github {
     width: 100%;
     height: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.link_github > a {
+
+.link_github>a {
     text-decoration: none;
     color: #ffffff;
     font-weight: 700;
@@ -434,7 +480,7 @@ footer{
     font-size: 1.1rem;
 }
 
-.copy{
+.copy {
     width: 100%;
     height: 50px;
     display: flex;
@@ -443,38 +489,40 @@ footer{
     color: #ffffff;
     font-weight: 600;
 }
-.copy > small {
+
+.copy>small {
     margin-bottom: 5px;
 }
 
 /*media-query = 375px*/
 @media (min-width:375px) {
-    .card_curiosidades{
+    .card_curiosidades {
         width: 80%;
     }
 
-    footer{
+    footer {
         height: 200px;
     }
 
-    .imagem_linkedin{
+    .imagem_linkedin {
         display: flex;
         align-items: center;
         justify-content: center;
     }
 
-    .imagem_github{
+    .imagem_github {
         display: flex;
         align-items: center;
         justify-content: center;
     }
 
-    .imagem_linkedin > img{
+    .imagem_linkedin>img {
         width: 70%;
         height: 80px;
         border-radius: 50%;
     }
-    .imagem_github > img{
+
+    .imagem_github>img {
         width: 70%;
         height: 80px;
         border-radius: 50%;
@@ -483,36 +531,37 @@ footer{
 
 /*media-query = 425px*/
 @media (min-width:425px) {
-    .card_curiosidades{
+    .card_curiosidades {
         width: 75%;
     }
 
-    footer{
+    footer {
         height: 200px;
     }
 
-    .imagem_linkedin{
+    .imagem_linkedin {
         display: flex;
         align-items: center;
         justify-content: center;
     }
 
-    .imagem_github{
+    .imagem_github {
         display: flex;
         align-items: center;
         justify-content: center;
     }
 
-    .video_atracoes > iframe {
+    .video_atracoes>iframe {
         width: 90%;
     }
 
-    .imagem_linkedin > img{
+    .imagem_linkedin>img {
         width: 65%;
         height: 80px;
         border-radius: 50%;
     }
-    .imagem_github > img{
+
+    .imagem_github>img {
         width: 65%;
         height: 80px;
         border-radius: 50%;
@@ -521,8 +570,8 @@ footer{
 
 /*media-query = 768px*/
 @media (min-width:768px) {
-    header{
-        max-width: 100%;
+    header {
+        max-width: 100vw;
         height: 85px;
         background-color: #08a337;
         display: flex;
@@ -530,25 +579,28 @@ footer{
         align-items: center;
         justify-content: space-between;
     }
-    .logo{
+
+    .logo {
         width: 30%;
         height: 80px;
         display: flex;
         align-items: center;
     }
-    .logo > .img_logo{
+
+    .logo>.img_logo {
         width: 100%;
         height: 80px;
         display: flex;
         align-items: center;
         justify-content: left;
     }
-    .img_logo > img {
+
+    .img_logo>img {
         width: 40%;
         margin-left: 20px;
     }
 
-    nav{
+    nav {
         width: 70%;
         height: 80px;
         display: flex;
@@ -556,7 +608,7 @@ footer{
         justify-content: right;
     }
 
-    nav > ul {
+    nav>ul {
         width: 90%;
         height: 80px;
         display: flex;
@@ -580,7 +632,7 @@ footer{
         border-radius: 10%;
     }
 
-    main{
+    main {
         max-width: 100%;
         height: auto;
     }
@@ -592,11 +644,16 @@ footer{
         align-items: center;
         justify-content: center;
     }
-    .banner_principal > img {
+
+    .container {
         width: 100%;
         height: 300px;
-        object-fit: cover;
+        background-image: url("../img/serra-de-guaramiranga-1.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
     }
+
 
     .curiosidades {
         height: 1160px;
@@ -608,26 +665,29 @@ footer{
         align-items: flex-end;
     }
 
-    .card_curiosidades{
+    .card_curiosidades {
         width: 80%;
         height: 350px;
     }
-    .texto_card{
+
+    .texto_card {
         width: 90%;
         display: flex;
         align-items: center;
     }
-    .texto_card > p {
+
+    .texto_card>p {
         text-align: center;
         letter-spacing: 2px;
     }
-    .card_curiosidades > .saiba_mais {
+
+    .card_curiosidades>.saiba_mais {
         height: 80px;
         display: flex;
         align-items: center;
     }
 
-    .saiba_mais > a {
+    .saiba_mais>a {
         padding: 10px 20px;
     }
 
@@ -636,25 +696,26 @@ footer{
         align-items: flex-end;
         justify-content: center;
     }
-    .titulo_video > h4 {
+
+    .titulo_video>h4 {
         font-size: 1.2rem;
     }
 
-    .video{
+    .video {
         height: 800px;
     }
 
-    .video_atracoes{
+    .video_atracoes {
         width: 100%;
         height: 750px;
     }
 
-    .video_atracoes > iframe {
+    .video_atracoes>iframe {
         width: 80%;
         height: 220px;
     }
 
-    footer{
+    footer {
         background-color: #08a337;
         height: 150px;
     }
@@ -668,7 +729,7 @@ footer{
         gap: 1px;
     }
 
-    .linkedin{
+    .linkedin {
         width: 30%;
         height: 90px;
         display: flex;
@@ -677,14 +738,14 @@ footer{
         justify-content: center;
     }
 
-    .imagem_linkedin{
+    .imagem_linkedin {
         height: 60px;
         display: flex;
         align-items: center;
         justify-content: center;
     }
 
-    .github{
+    .github {
         width: 30%;
         height: 90px;
         display: flex;
@@ -693,29 +754,30 @@ footer{
         justify-content: center;
     }
 
-    .imagem_github{
+    .imagem_github {
         height: 60px;
         display: flex;
         align-items: center;
         justify-content: center;
     }
 
-    .imagem_linkedin > img{
-        width: 25%;
-        height: 60px;
-        border-radius: 50%;
-    }
-    .imagem_github > img{
+    .imagem_linkedin>img {
         width: 25%;
         height: 60px;
         border-radius: 50%;
     }
 
-    .copy{
+    .imagem_github>img {
+        width: 25%;
+        height: 60px;
+        border-radius: 50%;
+    }
+
+    .copy {
         height: 20px;
     }
 
-    .copy > small{
+    .copy>small {
         margin-bottom: 10px;
     }
 
@@ -723,7 +785,7 @@ footer{
 
 /*media-query = 1024px*/
 @media (min-width:1024px) {
-    header{
+    header {
         width: 100%;
         height: 80px;
         position: fixed;
@@ -732,27 +794,31 @@ footer{
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
+        z-index: 1000;
     }
-    .logo{
+
+    .logo {
         width: 50%;
         height: 80px;
         display: flex;
         align-items: center;
     }
-    .logo > .img_logo{
+
+    .logo>.img_logo {
         width: 100%;
         height: 80px;
         display: flex;
         align-items: center;
         justify-content: left;
     }
-    .img_logo > img {
-        width: 22%;   
+
+    .img_logo>img {
+        width: 22%;
         margin-left: 20px;
         object-fit: cover;
     }
 
-    nav{
+    nav {
         width: 70%;
         height: 80px;
         display: flex;
@@ -760,7 +826,7 @@ footer{
         justify-content: right;
     }
 
-    nav > ul {
+    nav>ul {
         width: 90%;
         height: 80px;
         display: flex;
@@ -769,7 +835,7 @@ footer{
         margin-right: 30px;
     }
 
-    nav > ul > li > a {
+    nav>ul>li>a {
         font-size: 1.1rem;
     }
 
@@ -778,19 +844,20 @@ footer{
     }
 
     .banner_principal {
-        max-width: 100%;
-        height: 550px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        width: 100%;
+        height: 500px;
         padding-top: 50px;
     }
-    .banner_principal > img {
-        max-width: 91%;
-        height: 350px;
-        border-radius: 5px;
-        box-shadow: 2px 1px 8px #08a337;
+
+    .container {
+        width: 100%;
+        height: 450px;
+        background-image: url("../img/serra-de-guaramiranga-1.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
     }
+
 
     .curiosidades {
         width: 100%;
@@ -807,10 +874,12 @@ footer{
         align-items: flex-end;
         justify-content: flex-start;
     }
-    .titulo_curiosidades > h4 {
+
+    .titulo_curiosidades>h4 {
         font-size: 1.3rem;
     }
-    .banner_curiosidades{
+
+    .banner_curiosidades {
         width: 100%;
         height: 510px;
         display: flex;
@@ -819,36 +888,41 @@ footer{
         gap: 20px;
     }
 
-    .card_curiosidades{
+    .card_curiosidades {
         width: 29%;
         height: 460px;
         display: flex;
         flex-direction: column;
     }
-    .imagem_card{
+
+    .imagem_card {
         height: 190px;
     }
-    .imagem_card > img {
+
+    .imagem_card>img {
         height: 190px;
     }
-    .texto_card{
+
+    .texto_card {
         width: 90%;
         height: 210px;
         display: flex;
         align-items: center;
     }
-    .texto_card > p {
+
+    .texto_card>p {
         text-align: center;
         letter-spacing: 2px;
     }
-    .card_curiosidades > .saiba_mais {
+
+    .card_curiosidades>.saiba_mais {
         height: 50px;
         display: flex;
         align-items: flex-end;
     }
 
 
-    .video{
+    .video {
         width: 100%;
         height: 550px;
         display: flex;
@@ -862,24 +936,25 @@ footer{
         align-items: flex-end;
         justify-content: flex-start;
     }
-    .titulo_video > h4 {
+
+    .titulo_video>h4 {
         font-size: 1.3rem;
     }
 
-    .video_atracoes{
+    .video_atracoes {
         width: 100%;
         height: 500px;
         display: flex;
         flex-direction: row;
     }
 
-    .video_atracoes > iframe {
+    .video_atracoes>iframe {
         width: 28%;
         height: 400px;
         object-fit: cover;
     }
 
-    footer{
+    footer {
         background-color: #08a337;
         height: 180px;
     }
@@ -893,7 +968,7 @@ footer{
         gap: 1px;
     }
 
-    .linkedin{
+    .linkedin {
         width: 30%;
         height: 100px;
         display: flex;
@@ -902,14 +977,14 @@ footer{
         justify-content: center;
     }
 
-    .imagem_linkedin{
+    .imagem_linkedin {
         height: 60px;
         display: flex;
         align-items: center;
         justify-content: center;
     }
 
-    .github{
+    .github {
         width: 30%;
         height: 100px;
         display: flex;
@@ -918,29 +993,30 @@ footer{
         justify-content: center;
     }
 
-    .imagem_github{
+    .imagem_github {
         height: 60px;
         display: flex;
         align-items: center;
         justify-content: center;
     }
 
-    .imagem_linkedin > img{
-        width: 25%;
-        height: 70px;
-        border-radius: 50%;
-    }
-    .imagem_github > img{
+    .imagem_linkedin>img {
         width: 25%;
         height: 70px;
         border-radius: 50%;
     }
 
-    .copy{
+    .imagem_github>img {
+        width: 25%;
+        height: 70px;
+        border-radius: 50%;
+    }
+
+    .copy {
         height: 20px;
     }
 
-    .copy > small{
+    .copy>small {
         margin-bottom: 10px;
     }
 
@@ -948,7 +1024,7 @@ footer{
 
 /*media-query = 1280px*/
 @media (min-width:1280px) {
-    header{
+    header {
         max-width: 100vw;
         height: 75px;
         background-color: #08a337;
@@ -956,27 +1032,31 @@ footer{
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
+        z-index: 1000;
     }
-    .logo{
+
+    .logo {
         width: 50%;
         height: 80px;
         display: flex;
         align-items: center;
         justify-content: left;
     }
-    .logo > .img_logo{
+
+    .logo>.img_logo {
         width: 50%;
         height: 80px;
         display: flex;
         align-items: center;
         justify-content: left;
     }
-    .img_logo > img {
-        width: 25%;  
+
+    .img_logo>img {
+        width: 25%;
         margin-left: 40px;
     }
 
-    nav{
+    nav {
         width: 50%;
         height: 80px;
         display: flex;
@@ -985,7 +1065,7 @@ footer{
         margin-right: 10px;
     }
 
-    nav > ul {
+    nav>ul {
         width: 90%;
         height: 80px;
         display: flex;
@@ -994,33 +1074,38 @@ footer{
         margin-right: 40px;
     }
 
-    nav > ul > li > a {
+    nav>ul>li>a {
         font-size: 1.1rem;
     }
 
-    main{
+    main {
         max-width: 100vw;
     }
 
     .banner_principal {
-        max-width: 100%;
-        height: 600px;
+        width: 100%;
+        height: 500px;
         display: flex;
-        align-items: center;
         justify-content: center;
         padding-top: 120px;
     }
-    .banner_principal > img {
-        max-width: 90%;
-        height: 450px;
-        box-shadow: 1px 1px 8px #08a337;
+
+    .container {
+        width: 100%;
+        height: 470px;
+        background-image: url("../img/serra-de-guaramiranga-1.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
     }
+
 
     .curiosidades {
         width: 100%;
         height: 550px;
         display: flex;
         flex-direction: column;
+        padding-top: 70px;
     }
 
     .titulo_curiosidades {
@@ -1028,55 +1113,64 @@ footer{
         height: 50px;
         display: flex;
         flex-direction: row;
-        align-items: flex-end;
+        align-items: center;
         justify-content: flex-start;
     }
-    .titulo_curiosidades > h4 {
+
+    .titulo_curiosidades>h4 {
         font-size: 1.3rem;
         margin-left: 10px;
     }
-    .banner_curiosidades{
+
+    .banner_curiosidades {
         width: 100%;
         height: 500px;
         display: flex;
         flex-direction: row;
         align-items: center;
         gap: 40px;
+        padding-top: 20px;
     }
 
-    .card_curiosidades{
+    .card_curiosidades {
         width: 28%;
         height: 450px;
         display: flex;
         flex-direction: column;
     }
-    .imagem_card{
+
+    .imagem_card {
         height: 190px;
     }
-    .imagem_card > img {
+
+    .imagem_card>img {
         height: 190px;
     }
-    .texto_card{
+
+    .texto_card {
         width: 90%;
         height: 210px;
         display: flex;
         align-items: center;
     }
-    .texto_card > p {
+
+    .texto_card>p {
         text-align: center;
         letter-spacing: 2px;
     }
-    .card_curiosidades > .saiba_mais {
+
+    .card_curiosidades>.saiba_mais {
         height: 50px;
         display: flex;
         align-items: center;
     }
-    .saiba_mais > a {
+
+    .saiba_mais>a {
         margin-bottom: 5px;
     }
 
 
-    .video{
+    .video {
         width: 100%;
         height: 550px;
         display: flex;
@@ -1090,11 +1184,12 @@ footer{
         align-items: flex-end;
         justify-content: flex-start;
     }
-    .titulo_video > h4 {
+
+    .titulo_video>h4 {
         font-size: 1.3rem;
     }
 
-    .video_atracoes{
+    .video_atracoes {
         width: 100%;
         height: 500px;
         display: flex;
@@ -1102,13 +1197,13 @@ footer{
         gap: 10px;
     }
 
-    .video_atracoes > iframe {
+    .video_atracoes>iframe {
         width: 27%;
         height: 450px;
         object-fit: cover;
     }
 
-    footer{
+    footer {
         background-color: #08a337;
         max-width: 100vw;
         height: 180px;
@@ -1123,7 +1218,7 @@ footer{
         gap: 1px;
     }
 
-    .linkedin{
+    .linkedin {
         width: 30%;
         height: 100px;
         display: flex;
@@ -1132,7 +1227,7 @@ footer{
         justify-content: center;
     }
 
-    .imagem_linkedin{
+    .imagem_linkedin {
         width: 100%;
         height: 70px;
         display: flex;
@@ -1140,7 +1235,7 @@ footer{
         justify-content: center;
     }
 
-    .github{
+    .github {
         width: 30%;
         height: 100px;
         display: flex;
@@ -1149,7 +1244,7 @@ footer{
         justify-content: center;
     }
 
-    .imagem_github{
+    .imagem_github {
         width: 100%;
         height: 70px;
         display: flex;
@@ -1157,18 +1252,19 @@ footer{
         justify-content: center;
     }
 
-    .imagem_linkedin > img{
-        width: 20%;
-        height: 80px;
-        border-radius: 50%;
-    }
-    .imagem_github > img{
+    .imagem_linkedin>img {
         width: 20%;
         height: 80px;
         border-radius: 50%;
     }
 
-    .copy{
+    .imagem_github>img {
+        width: 20%;
+        height: 80px;
+        border-radius: 50%;
+    }
+
+    .copy {
         width: 100%;
         height: 30px;
         display: flex;
@@ -1179,41 +1275,52 @@ footer{
 
 /*media-query = 1440px*/
 @media (min-width:1440px) {
-    header{
+    header {
         background-color: #08a337;
         height: 90px;
         position: fixed;
+        z-index: 1000;
     }
-    .logo{
+
+    .logo {
         width: 40%;
         height: 90px;
     }
-    .img_logo{
+
+    .img_logo {
         width: 100%;
         height: 90px;
     }
-    .img_logo > img {
+
+    .img_logo>img {
         width: 20%;
     }
-    .banner_principal{
+
+    .banner_principal {
         width: 100%;
-        height: 500px;
-    }
-    .banner_principal > img {
-        width: 90%;
         height: 450px;
-        box-shadow: 1px 1px 8px #08a337;
+        display: flex;
+        justify-content: center;
     }
 
-    nav > ul {
+    .container{
+        width: 100%;
+        min-height: 550px;
+        background-image: url("../img/serra-de-guaramiranga-1.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    nav>ul {
         margin-right: 40px;
     }
 
-    nav > ul > li > a {
+    nav>ul>li>a {
         font-size: 1.1rem;
     }
 
-    main{
+    main {
         width: 100vw;
         height: auto;
     }
@@ -1222,7 +1329,7 @@ footer{
         height: 600px;
     }
 
-    footer{
+    footer {
         background-color: #08a337;
         height: 180px;
     }
@@ -1235,7 +1342,7 @@ footer{
         justify-content: center;
     }
 
-    .linkedin{
+    .linkedin {
         width: 25%;
         height: 100px;
         display: flex;
@@ -1244,14 +1351,14 @@ footer{
         justify-content: center;
     }
 
-    .imagem_linkedin{
+    .imagem_linkedin {
         height: 60px;
         display: flex;
         align-items: center;
         justify-content: center;
     }
 
-    .github{
+    .github {
         width: 25%;
         height: 100px;
         display: flex;
@@ -1260,29 +1367,30 @@ footer{
         justify-content: center;
     }
 
-    .imagem_github{
+    .imagem_github {
         height: 60px;
         display: flex;
         align-items: center;
         justify-content: center;
     }
 
-    .imagem_linkedin > img{
-        width: 20%;
-        height: 70px;
-        border-radius: 50%;
-    }
-    .imagem_github > img{
+    .imagem_linkedin>img {
         width: 20%;
         height: 70px;
         border-radius: 50%;
     }
 
-    .copy{
+    .imagem_github>img {
+        width: 20%;
+        height: 70px;
+        border-radius: 50%;
+    }
+
+    .copy {
         height: 20px;
     }
 
-    .copy > small{
+    .copy>small {
         margin-bottom: 1px;
     }
 }
